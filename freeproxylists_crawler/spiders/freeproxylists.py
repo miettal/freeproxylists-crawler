@@ -25,7 +25,6 @@ class FreeproxylistsSpider(scrapy.Spider):
                     'protocol': protocol,
                     'rate': rate,
                 }
-                print(ip, port, protocol, rate)
             except IndexError:
                 pass
 
