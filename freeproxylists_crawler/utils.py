@@ -4,7 +4,7 @@ import json
 
 def get_proxies():
     p = subprocess.Popen(
-        ['python', '-m' 'freeproxylists_crawler.show_proxies'],
+        ['python', '-m' 'freeproxylists_crawler.tools.show_proxies'],
         stdin=subprocess.PIPE,
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE,
