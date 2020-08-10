@@ -7,10 +7,10 @@ import scrapy
 
 class FreeproxylistsSpider(scrapy.Spider):
     name = 'freeproxylists'
-    # allowed_domains = ['www.freeproxylists.net', 'proxy.moo.jp']
-    # start_urls = ['http://www.freeproxylists.net/', 'http://proxy.moo.jp/']
-    allowed_domains = ['proxy.moo.jp']
-    start_urls = ['http://proxy.moo.jp/']
+    allowed_domains = ['www.freeproxylists.net', 'proxy.moo.jp']
+    start_urls = ['http://www.freeproxylists.net/', 'http://proxy.moo.jp/']
+    # allowed_domains = ['proxy.moo.jp']
+    # start_urls = ['http://proxy.moo.jp/']
 
     def parse(self, response):
         tbl = response.css('table')[1]
