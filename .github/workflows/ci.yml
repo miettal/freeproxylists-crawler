@@ -1,0 +1,10 @@
+name: CrawlingTest
+on: [push]
+
+jobs:
+  build:
+    name: CrawlingTest
+    runs-on: python
+    steps:
+      - run: pip install .
+      - run: scrapy crawl freeproxylists
