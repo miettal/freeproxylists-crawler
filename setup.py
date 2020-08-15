@@ -7,6 +7,6 @@ setup(
     packages=find_packages(),
     install_requires=[
         'Scrapy',
-        'scrapy-selenium',
+        'scrapy-selenium @ git+https://github.com/clemfromspace/scrapy-selenium.git@develop',
     ],
 )
