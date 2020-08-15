@@ -9,6 +9,6 @@ jobs:
       - uses: actions/checkout@v2
       - run: pwd
       - run: ls
-      - run: sudo apt-get install -y python python-pip
+      - run: sudo apt-get install -y python python-pip python-setuptools
       - run: pip install .
       - run: scrapy crawl freeproxylists
