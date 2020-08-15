@@ -4,7 +4,8 @@ on: [push]
 jobs:
   build:
     name: CrawlingTest
-    runs-on: python
+    runs-on: ubuntu-latest
     steps:
+      - run: apt install python python-pip
       - run: pip install .
       - run: scrapy crawl freeproxylists
