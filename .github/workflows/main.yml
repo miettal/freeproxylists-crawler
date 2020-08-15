@@ -6,6 +6,6 @@ jobs:
     name: CrawlingTest
     runs-on: ubuntu-latest
     steps:
-      - run: apt install python python-pip
+      - run: sudo apt-get install -y python python-pip
       - run: pip install .
       - run: scrapy crawl freeproxylists
