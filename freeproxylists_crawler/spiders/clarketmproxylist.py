@@ -13,6 +13,7 @@ class ClarketmProxyListSpider(scrapy.Spider):
                 yield {
                     'ip': ip,
                     'port': port,
+                    'protocol': 'http',
                 }
             except ValueError:
                 pass
