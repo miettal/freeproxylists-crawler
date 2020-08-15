@@ -57,7 +57,8 @@ DOWNLOADER_MIDDLEWARES = {
     'scrapy_selenium.SeleniumMiddleware': 800,
 }
 
-SELENIUM_DRIVER_EXECUTABLE_PATH = 'http://127.0.0.1:4444/wd/hub'
+SELENIUM_DRIVER_NAME = 'chrome'
+SELENIUM_COMMAND_EXECUTOR = 'http://127.0.0.1:4444/wd/hub'
 
 # Enable or disable extensions
 # See https://docs.scrapy.org/en/latest/topics/extensions.html
