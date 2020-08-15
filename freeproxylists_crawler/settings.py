@@ -52,9 +52,12 @@ ROBOTSTXT_OBEY = True
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
-#DOWNLOADER_MIDDLEWARES = {
+DOWNLOADER_MIDDLEWARES = {
 #    'freeproxylists_crawler.middlewares.FreeproxylistsCrawlerDownloaderMiddleware': 543,
-#}
+    'scrapy_selenium.SeleniumMiddleware': 800,
+}
+
+SELENIUM_DRIVER_EXECUTABLE_PATH = 'http://127.0.0.1:4444/wd/hub'
 
 # Enable or disable extensions
 # See https://docs.scrapy.org/en/latest/topics/extensions.html
