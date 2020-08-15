@@ -10,6 +10,7 @@ class ClarketmProxyListSpider(scrapy.Spider):
         for line in response.body.decode('utf-8').split('\n'):
             try:
                 (ip, port) = line.split(':')
+                port = int(port)
                 yield {
                     'ip': ip,
                     'port': port,
