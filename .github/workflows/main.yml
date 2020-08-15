@@ -6,7 +6,7 @@ jobs:
     name: CrawlingTest
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout
+      - uses: actions/checkout@v2
       - run: pwd
       - run: ls
       - run: sudo apt-get install -y python python-pip
