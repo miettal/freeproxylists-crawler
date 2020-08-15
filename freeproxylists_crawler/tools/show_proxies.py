@@ -23,8 +23,8 @@ if __name__ == '__main__':
 
     if options.source is None:
         spider = random.choice([
-            'freeproxylists',
-            'clarketmproxylist',
+            FreeproxylistsSpider,
+            ClarketmProxyListSpider,
         ])
     elif options.source == 'freeproxylists':
         spider = FreeproxylistsSpider
