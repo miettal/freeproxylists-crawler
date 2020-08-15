@@ -10,5 +10,5 @@ jobs:
       - run: pwd
       - run: ls
       - run: sudo apt-get install -y python3 python3-pip python3-setuptools
-      - run: pip3 install .
+      - run: sudo pip3 install .
       - run: scrapy crawl freeproxylists
